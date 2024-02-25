@@ -11,7 +11,7 @@ app.use(function(req,res,next){
 next();
 })
  
- 
+ app.use(express.static(path.join(__dirname,"../public")))
 // 2.  janno 1 must equire 
 // for dynamic website
 // frist set the view engin
@@ -37,9 +37,19 @@ app.get("/about",(req,res)=>{
 
  })
  
- 
 
-   
+//  params normaly jakono jaigai use kora jaba
+//  app.get("/about/:user",(req,res)=>{
+//     res.render("404",{error:'oops page not found',val:req.params.user});
+
+//      }) 
+
+
+app.get("/about/*",(req,res)=>{
+        res.render("404",{error:'oops page not found',val:req.params.user});
+    
+         }) 
+     
  
 // before lister after all render
 // 404 handel code

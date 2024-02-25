@@ -30,25 +30,27 @@
 #foot{
    background-color: black;
     text-align: center;
-
-
+height: 70px;
+bottom: 0;
+   position: fixed;
+   width: 100vw;
 }
-#foot p{
+#foot,p{
    color: white;
    align-items: center;
-   line-height: 4rem;
-   bottom: 0;
-   position: fixed;
+    
 
 }
 
 #flexx{
    display: flex;
    align-items: center;
+   justify-content: space-between;
 }
-#flexx p{
+#flexx,p{
    font-size: 29px;
-}
+   background-color: #007bff;
+ }
 
 @media (max-width:769px) {
    #backword {

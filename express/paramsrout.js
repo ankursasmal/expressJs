@@ -25,7 +25,7 @@ app.get("/about",(req,res)=>{
     
 })
 // about ar por ja likbi si anujai dynamicaly channge hoba
-app.get("/about",(req,res)=>{
+app.get("/about/:username",(req,res)=>{
  res.send(`usernameis ${req.params.username}`);
     
 })
