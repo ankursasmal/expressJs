@@ -1,9 +1,9 @@
 const express=require("express");
 const path=require("path");
 // 1. for partial import hbs 
-const hbs=require('hbs')
 const app=express();
 const port=8000;
+const hbs=require('hbs')
 
 //middle wear must likta hoba 
 // hato middle wear banata pari next()forword kora next lline exiqution a
